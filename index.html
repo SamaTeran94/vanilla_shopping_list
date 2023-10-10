@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="w-1/2 h-auto flex flex-col justify-center items-center bg-slate-200 p-8">
+            <header>
+                <h1 class="text-3xl font-bold mb-4 text-center">Shopping List</h1>
+            </header>
+            <form class="mb-4 w-full" id="item-form">
+                <div class="mb-2">
+                    <input type="text" name="task" placeholder="Enter Item" class="p-2 border rounded w-full"
+                        id="item-input">
+                </div>
+                <div>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded" id="add">
+                        <i class="fas fa-plus"></i> Add item
+                    </button>
+                </div>
+            </form>
+
+            <div class="mb-4 w-full">
+                <input type="text" placeholder="Filter Items" class="p-2 border rounded w-full" id="item-filter">
+            </div>
+
+            <ul class="mb-4 w-full flex flex-col gap-3" id="item-list">
+                <!--<li class="flex justify-between items-center p-2 border-black border font-bold">
+                    Milk
+                    <button class="text-red-500 remove-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </li>
+                <li class="flex justify-between items-center p-2 border-black border font-bold">
+                    Task
+                    <button class="text-red-500 remove-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </li>
+                <li class="flex justify-between items-center p-2 border-black border font-bold">
+                    Task
+                    <button class="text-red-500 remove-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </li> -->
+            </ul>
+
+            <button class="bg-red-500 text-white px-4 py-2 rounded w-full" id="clear-btn">
+                Clear All
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
